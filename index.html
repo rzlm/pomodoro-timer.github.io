@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    
+    <div class="app-container">
+
+      
+
+      <div class="">
+            <h1 class="mainheader">pomodoro</h1>  
+            
+            <div class="time-container">
+                <h1 id="time" class="timer">0:25:00</h1>
+            </div>
+            <div class="btn-container">
+              
+                    <button id="start-btn"class="btn" >start</button>
+                    <button id="restart"class="btn" >restart</button>
+                    <button onclick="showModal()"id="modal-btn"><img class="settings" src="assets/setting.png"></button>
+      
+            </div>
+      </div>
+       
+    </div>
+
+    <dialog id="modal" class="modal-container">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div>
+          <div class="options-btns"> 
+            <h2>general</h2>
+            <div class="dropdown">
+              <button id="changebg"class="options-btns-btn">change background</button>
+              <div id="bg-dropdown"class="dropdown-content">
+                <p id="fallforest">fall forest</p>
+                <p id="brightcity">bright city</p>
+                <p id="train">train</p>
+                <p id="lightning">lightning</p>
+                <p id="desert">desert</p>
+                <p id="hiking">hiking</p>
+                <p id="skyline">skyline</p>
+                <p id="canyon">canyon</p>
+                
+              
+                
+              </div>
+
+            </div>
+
+            <div class="dropdown">
+              <button id="changeTime" class="options-btns-btn">change time (minutes)</button>
+              <div  id="t-dropdown"class="dropdown-content">
+                <div class="dropdown">
+                    <select id="timeoptions">
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                      <option value="25">25</option>
+                      <option value="30">30</option>
+                      <option value="35">35</option>
+                      <option value="40">40</option>
+                      <option value="45">45</option>
+                      <option value="50">50</option>
+                      <option value="55">55</option>
+                      <option value="60"">60</option>
+          
+                    </select>
+                    <button id="submitTime">Submit</button>
+
+              </div>
+
+
+            </div>
+
+            <div class="dropdown">
+              <button id="changeSound"class="options-btns-btn">change sound</button>
+              <div id="s-dropdown"class="dropdown-content">
+                <p id="">fall forest</p>
+                <p id="">bright city</p>
+                <p id="">relaxing rain</p>
+              </div>
+
+            </div>
+            
+  
+          </div>
+        </div>
+        
+
+      </div>
+
+    </dialog>
+
+
+	<script src="index.js"></script>
+  </body>
+</html>
+

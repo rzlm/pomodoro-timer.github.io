@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
+* {
+    font-family: "Poppins";
+}
+body {  
+    background-image: url("assets/train.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(106, 106, 106);
+background-blend-mode: multiply;
+
+
+}
+
+.app-container {
+
+ display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+
+}
+.mainheader {
+    color:#fa4d64;
+    
+}
+
+.btn {
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    margin: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+    align-items: center;
+    
+
+}
+.btn:hover {
+    color: black;
+    background: white;
+   
+} 
+
+.settings {
+width: 35px;
+height: 35px;
+margin: 15px;
+}
+
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* .btn:nth-child(1) {
+    background-color: #abe1d0;
+    
+  
+}
+
+.btn:nth-child(2) {
+    background-color: #7bbbf0;
+    
+  
+}
+.btn:nth-child(3) {
+    background-color: #fa4d64;
+    
+  
+} */
+
+.timer {
+    font-size: 90px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding:10px 30px;
+}
+#modal-btn {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #fefefe;
+    width: 100%;
+    overflow: scroll;
+}
+
+.options-btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.options-btns-btn {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin-top: 5px;
+    color: #888;
+    font-size: 16px;
+
+}
+
+.options-btns-btn:hover {
+    border-bottom-width: 3px ;
+    border-bottom-style: solid;
+    color: black;
+
+
+} 
+.dropdown-content {
+    display: none;
+
+}
+.dropdown-content p:hover {
+    background-color: #ddd; 
+    cursor: pointer;
+}
+
+.close {
+    cursor: pointer;
+}
